@@ -10,7 +10,7 @@ RUN curl -s "https://raw.githubusercontent.com/zerotier/ZeroTierOne/master/doc/c
 RUN apt-get update && apt-get install -y zerotier-one=1.10.1
 COPY main.sh /var/lib/zerotier-one/main.sh
 
-FROM frolvlad/alpine-glibc:alpine-3.14_glibc-2.33
+FROM frolvlad/alpine-glibc:alpine-3.16_glibc-2.35
 
 LABEL version="1.10.1"
 LABEL description="Containerized ZeroTier One for use on CoreOS or other Docker-only Linux hosts."
